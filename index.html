@@ -20,19 +20,23 @@
       <div class="right-main-box">
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="input-group">
-            <input class="field name-field" type="text" name="name" id="name-input" placeholder="Jonathan" required>
+            <input class="field name-field" type="text" name="name" id="name-input" minlength="2" placeholder="Jonathan" required>
+            <p class="incorrect">First Name cannot be empty</p>
           </div>
 
           <div class="input-group">
-            <input class="field" type="text" name="name" id="name-input" placeholder="Last Name" required>
+            <input class="field" type="text" name="name" id="name-input" minlength="2" placeholder="Last Name" required>
+            <p class="incorrect">Last Name cannot be empty</p>
           </div>
 
           <div class="input-group">
             <input class="field" type="email" name="name" id="name-input" placeholder="Email Address" required>
+            <p class="incorrect">Looks like this is not an email</p>
           </div>
 
           <div class="input-group">
-            <input class="field" type="password" name="name" id="name-input" placeholder="Password" required>
+            <input class="field" type="password" name="name" id="name-input" minlength="6" maxlength="15" placeholder="Password" required>
+            <p class="incorrect">Password cannot be empty</p>
           </div>
           
           <button class="right-main-button" type="submit">CLAIM YOUR FREE TRIAL</button>
